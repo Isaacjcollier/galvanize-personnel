@@ -1,1 +1,6 @@
 /* add some styles */
+
+.save-status, .failed-status {
+  display: none;
+  padding: 15px;
+}
