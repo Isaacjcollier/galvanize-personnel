@@ -31,6 +31,7 @@ $(function () {
         console.log(RolePreview);
         $('#role-preview')[0].src = image;
       })
+      //
 
       $('[type="submit"]').click(function(e){
         e.preventDefault()
