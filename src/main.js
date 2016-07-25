@@ -21,9 +21,7 @@ $(function () {
 
         RolePreview.name = 'blah'
         RolePreview["name"] = 'Name'
-        //
-        // <option data-name="Thankdata-image="./assets/images/tank.jpg" value="Tank">Tank</option>
-        //
+
       }
       $('#role').on('change', function (e) {
         var image = RolePreview[$(this).val()];
@@ -31,7 +29,6 @@ $(function () {
         console.log(RolePreview);
         $('#role-preview')[0].src = image;
       })
-      //
 
       $('[type="submit"]').click(function(e){
         e.preventDefault()
@@ -59,32 +56,7 @@ $(function () {
           $status.fadeOut(500);
         }, 2000);
       }
-
-      // HTML classes and ids should be dashes
-      // therefore you can use dashes all throughout your CSS
-      // JS variables are CamelCased
-      // ruby variables are snake_cased
-      // CoffeeScript variables are either or, just be consistent. Pick one.
-
-      // when you do single quotes every character is interpreted literally
-      // 'one\ntwo'
-
-      // but when you use double quotes special charactesr are interpreted
-
-       // "one\ntwo"
-       // "one
-      //   two"
-
-      // loop over your data
-      // append an <option> tag with a value of the title
-
     }
-
-    // your role on change
-    // when the value changes
-    // grab the "data-image"(the url) from the selected option
-
-    // $('img').attr('src', newImageSrc)
   })
 
   $('form').on('submit', function (event) {
